@@ -1,0 +1,102 @@
+# --- Typography 字体与文字排版 ---
+# 使用编程字体：Maple Mono NF CN（中文优化，带图标）
+font-family = "Maple Mono NF CN"
+# 字体大小设置为22号
+font-size = 22
+# 自动调整行高，文字更舒展不拥挤（官方标准值）
+adjust-cell-height = 2
+
+# --- Theme and Colors 主题与颜色 ---
+# Gruvbox 复古暖（琥珀橙黄系，护眼）
+theme = Gruvbox Dark
+
+# --- Window and Appearance 窗口外观与毛玻璃 ---
+# 背景透明度 82%（高级通透感，0=完全透明，1=完全不透明）
+background-opacity = 0.82
+# 背景毛玻璃模糊强度 40（数值越大越糊，质感更高级）
+background-blur-radius = 40
+# Catppuccin Mocha 同色系渐变背景图（mauve→surface0→base 纵向渐变）
+background-image = ~/.config/ghostty/background.png
+# 铺满整个窗口（保持比例，边缘裁剪）
+background-image-fit = cover
+# 背景图不重复平铺
+background-image-repeat = false
+# 背景图位置居中
+background-image-position = center
+# Mac 标题栏设为透明（背景图/毛玻璃透到标题栏区域，一体化质感）
+macos-titlebar-style = transparent
+# 标签页标题字体与终端字体统一（视觉更协调）
+window-title-font-family = "Maple Mono NF CN"
+# Dock/切换器图标：官方幽灵图标 + Gruvbox 暖金配色
+macos-icon = custom-style
+# 图标外框材质（默认银色金属拉丝）
+macos-icon-frame = aluminum
+# 幽灵颜色：Gruvbox 金黄
+macos-icon-ghost-color = #d79921
+# 屏幕颜色：暖棕黑渐变（与背景图同色系）
+macos-icon-screen-color = #3c3836,#282828,#1d2021
+# 窗口左右内边距（文字不贴边，更美观）
+window-padding-x = 16
+# 窗口上下内边距
+window-padding-y = 12
+# 永久保存窗口大小/位置，下次打开自动恢复
+window-save-state = always
+# 窗口主题跟随系统（亮/暗自动切换）
+window-theme = auto
+
+# --- Cursor 光标样式 ---
+# 光标样式：竖线 |（可选 block/underline）
+cursor-style = bar
+# 开启光标闪烁
+cursor-style-blink = true
+# 光标透明度 85%（更柔和不刺眼）
+cursor-opacity = 0.85
+
+# --- Mouse 鼠标行为优化 ---
+# 打字时自动隐藏鼠标指针，避免遮挡
+mouse-hide-while-typing = true
+# 选中文字即自动复制（无需Cmd+C，提升效率）
+copy-on-select = clipboard
+
+# --- Quick Terminal 已改用 Hammerspoon 实现（~/.hammerspoon/ghostty-quick.lua）---
+# F1 全局呼出/隐藏普通窗口，跟随鼠标所在屏幕；不再使用 Ghostty 内置 quick terminal
+# 如需恢复内置版，取消注释下面两行即可：
+# keybind = f1=toggle_quick_terminal
+# quick-terminal-position = top
+
+# --- Keybindings 快捷键 ---
+# Cmd+←/→ 切换上一个/下一个标签页
+keybind = super+arrow_left=previous_tab
+keybind = super+arrow_right=next_tab
+# F2 全局一键呼出/隐藏 Ghostty 主窗口（任意应用下生效）
+# 首次使用需在 系统设置 → 隐私与安全性 → 辅助功能 中允许 Ghostty
+keybind = global:f2=toggle_visibility
+
+# --- Security 安全粘贴保护 ---
+# 开启粘贴防护，防止恶意脚本自动执行
+clipboard-paste-protection = true
+# 安全粘贴模式，避免多行命令乱执行
+clipboard-paste-bracketed-safe = true
+
+# --- Shell 集成 ---
+# 集成 zsh（Mac 默认Shell，确保环境变量正常加载）
+shell-integration = zsh
+
+# --- Claude 专属优化---
+# 软件启动时自动打开窗口
+initial-window = true
+# 命令执行完成后始终发送通知
+notify-on-command-finish = always
+
+# --- Behavior 行为配置 ---
+# 关闭标签页/窗口时不弹确认框（默认为 true，会因有活跃进程弹系统确认）
+confirm-close-surface = false
+
+# --- Performance 性能优化（官方标准配置）---
+# 终端历史记录行数 1000万（够用且轻量化，不卡顿）
+scrollback-limit = 10000000
+
+# --- Custom Shader 自定义着色器 ---
+# Gruvbox 琥珀光子特效：边缘金色流光 + 光标暖光晕 + 轻扫描线
+# 若画面异常（如全黑），删除此行即可恢复
+custom-shader = ~/.config/ghostty/shaders/photon.glsl
