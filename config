@@ -9,6 +9,10 @@ adjust-cell-height = 2
 # --- Theme and Colors 主题与颜色 ---
 # Gruvbox 复古暖（琥珀橙黄系，护眼）
 theme = Gruvbox Dark
+# 覆盖主题背景色：更深的本底（原 #282828 偏浅），暖黑 #161616
+background = #161616
+# ANSI 黑同步加深，终端应用底色与窗口一致
+palette = 0=#161616
 
 # --- Window and Appearance 窗口外观与毛玻璃 ---
 # 背景透明度 99%（接近实底，玻璃只剩极淡透光；想透一点调到 0.9）
