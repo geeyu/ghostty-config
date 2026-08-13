@@ -11,9 +11,9 @@ adjust-cell-height = 2
 theme = Gruvbox Dark
 
 # --- Window and Appearance 窗口外观与毛玻璃 ---
-# 背景透明度 80%（淡黑玻璃：深色终端底色盖在玻璃材质上，桌面若隐若现）
-# 更实 → 0.9，更透 → 0.7；注意：macOS 上此项改动需完全重启 Ghostty 生效
-background-opacity = 0.80
+# 背景透明度 99%（接近实底，玻璃只剩极淡透光；想透一点调到 0.9）
+# 注意：macOS 上此项改动需完全重启 Ghostty 生效
+background-opacity = 0.99
 # 背景毛玻璃：macOS regular 材质（比 clear 更磨砂更不透，玻璃质感 + 可读性兼顾）
 # 想要更通透用 macos-glass-clear；想要数值控制模糊强度用 background-blur = 40
 background-blur = macos-glass-regular
