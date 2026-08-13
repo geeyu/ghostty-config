@@ -18,9 +18,9 @@ palette = 0=#161616
 # 背景透明度 99%（接近实底，玻璃只剩极淡透光；想透一点调到 0.9）
 # 注意：macOS 上此项改动需完全重启 Ghostty 生效
 background-opacity = 0.99
-# 背景毛玻璃：macOS regular 材质（比 clear 更磨砂更不透，玻璃质感 + 可读性兼顾）
-# 想要更通透用 macos-glass-clear；想要数值控制模糊强度用 background-blur = 40
-background-blur = macos-glass-regular
+# 背景毛玻璃：数值模糊（底层永远是固定深色 #161616，不随桌面变色）
+# 注意：macos-glass-regular/clear 材质会实时反射桌面颜色（且有 opacity bug #13324），不再使用
+background-blur = 40
 # 渐变背景图减淡到 50%（叠在深色底上，若隐若现不抢玻璃）
 background-image-opacity = 0.50
 # Catppuccin Mocha 同色系渐变背景图（mauve→surface0→base 纵向渐变）
