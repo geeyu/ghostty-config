@@ -9,20 +9,20 @@ adjust-cell-height = 2
 # --- Theme and Colors 主题与颜色 ---
 # Gruvbox 复古暖（琥珀橙黄系，护眼）
 theme = Gruvbox Dark
-# 覆盖主题背景色：更深的本底（原 #282828 偏浅），暖黑 #161616
-background = #161616
-# ANSI 黑同步加深，终端应用底色与窗口一致
-palette = 0=#161616
+# 覆盖主题背景色：冷灰黑 #16181d（GitHub Dark 同款色相，去暖褐感）
+background = #16181d
+# ANSI 黑同步，终端应用底色与窗口一致
+palette = 0=#16181d
 
 # --- Window and Appearance 窗口外观与毛玻璃 ---
-# 背景透明度 99%（接近实底，玻璃只剩极淡透光；想透一点调到 0.9）
+# 背景透明度 95%（5% 玻璃透光，通透但不随桌面变色；0.99 时玻璃完全隐身）
 # 注意：macOS 上此项改动需完全重启 Ghostty 生效
-background-opacity = 0.99
+background-opacity = 0.95
 # 背景毛玻璃：数值模糊（底层永远是固定深色 #161616，不随桌面变色）
 # 注意：macos-glass-regular/clear 材质会实时反射桌面颜色（且有 opacity bug #13324），不再使用
 background-blur = 40
-# 渐变背景图减淡到 50%（叠在深色底上，若隐若现不抢玻璃）
-background-image-opacity = 0.50
+# 渐变背景图减淡到 30%（暖调渐变是褐感的来源之一，压低调让冷灰黑主导）
+background-image-opacity = 0.30
 # Catppuccin Mocha 同色系渐变背景图（mauve→surface0→base 纵向渐变）
 background-image = ~/.config/ghostty/background.png
 # 铺满整个窗口（保持比例，边缘裁剪）
