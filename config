@@ -24,8 +24,9 @@ background-image-fit = cover
 background-image-repeat = false
 # 背景图位置居中
 background-image-position = center
-# Mac 标题栏设为透明（背景图/毛玻璃透到标题栏区域，一体化质感）
-macos-titlebar-style = transparent
+# Mac 标题栏设为隐藏：终端占满全窗，玻璃材质铺满全窗（顶部也透明）
+# 红绿灯按钮隐藏，可用 Cmd+W 关闭、option+拖拽移动窗口；要恢复标题栏改回 transparent
+macos-titlebar-style = hidden
 # 标签页标题字体与终端字体统一（视觉更协调）
 window-title-font-family = "Maple Mono NF CN"
 
