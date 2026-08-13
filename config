@@ -11,8 +11,8 @@ adjust-cell-height = 2
 theme = Gruvbox Dark
 
 # --- Window and Appearance 窗口外观与毛玻璃 ---
-# 背景透明度 93%（clear 材质下保证文字可读）
-background-opacity = 0.93
+# 背景透明度 95%（clear 材质下保证文字可读）
+background-opacity = 0.95
 # 背景毛玻璃：macOS clear 材质（vibrancy，通透质感）
 # 数值控制模糊强度用 background-blur = 40
 background-blur = macos-glass-clear
