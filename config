@@ -11,10 +11,10 @@ adjust-cell-height = 2
 theme = Gruvbox Dark
 
 # --- Window and Appearance 窗口外观与毛玻璃 ---
-# 背景透明度 82%（高级通透感，0=完全透明，1=完全不透明）
-background-opacity = 0.82
-# 背景毛玻璃：macOS clear 材质（vibrancy，比数值模糊更通透）。
-# 旧写法 background-blur-radius = 40 已废弃；想要数值控制模糊强度用 background-blur = 40
+# 背景透明度 90%（clear 材质比数值模糊更透，取中间值保证文字可读）
+background-opacity = 0.90
+# 背景毛玻璃：macOS clear 材质（vibrancy，通透质感）
+# 数值控制模糊强度用 background-blur = 40
 background-blur = macos-glass-clear
 # Catppuccin Mocha 同色系渐变背景图（mauve→surface0→base 纵向渐变）
 background-image = ~/.config/ghostty/background.png
